@@ -7,30 +7,19 @@
     --color-title-background: #FDF1EB;
     --color-font-color: #ED7839;
 }
-.top{
-    display: flex;
-    flex-direction: row;
-}
-header {
-    background-color: var(--color-title-background);
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-}
-.options{
-    width: 15vw;
-    /* position: fixed; */
-    left: 0;
-    
 
+header {
+    float: right;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-title-background);
 }
-/* .options{
-    position: fixed;
-    display: left;
-    justify-content: left;
-    top: 0;
-    margin: 1em;
-} */
-.options > a{
-    display: block;
+.menu{
+    width: 15%;
+    margin: 0.5em;
+}
+main{
+    width: 85%;
+    float: right;
 }
