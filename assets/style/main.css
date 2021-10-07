@@ -1,6 +1,20 @@
-:root{
+html{
     --color-font-card: #4E4E4E;
+    --color-title-orange: #ED7839;
+    --color-background-oranged: #FDF1EB;
+    --color-title-geral: #4E4E4E;
+
+    font-size: 62.5% /* 10px */
+
 }
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 #mais{
     /* Construindo o leia mais do resumo */
     display:none;
