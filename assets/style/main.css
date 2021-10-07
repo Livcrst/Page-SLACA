@@ -1,10 +1,24 @@
 html{
-    /* --color-font-card: #4E4E4E; */
+    /*Bakgrounds */
     --color-title-orange: #ED7839;
-    --color-background-oranged: #FDF1EB;
     --color-title-geral: #4E4E4E;
 
+
+    --color-background-oranged: #FDF1EB;
+    --color-background-light: #F5F5F5;
+
+    --font-white: #FFFFFF;
+    --font-menu: #725C5C;
+
+
+    /* cores para gradiente aside */
+    --orange-light: #FFB354;
+    --orange-dark: #EE7A3A;
+
     /* font-size: 62.5% /* 10px  */
+
+    /* Font */
+    font-family: 'Roboto', sans-serif;
 
 }
 *{
@@ -14,18 +28,42 @@ html{
     text-decoration: none;
     box-sizing: border-box;
 }
-#aplication{
-    display: flex;
-    flex-direction: row;
-}
 .content-wrapper {
-    height: 80vh;
-    flex: 1;
+    width: 84%;
+    float: right;
 
 }
 aside{
-    height: 80vh;
-    width: 15vw;
+    width: 16%;
+    margin: 0; padding: 0;
+    float: left;
+    top: -5px;
+    position: fixed;
+
+}
+aside >  #title-event{
+    background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
+    color: var(--font-white);
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.option-event > li {
+    margin: 0px; padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+
+}
+.option-event a:link {
+    background: var(--color-background-light);
+    color: var(--font-menu);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
 }
 
 #mais{
