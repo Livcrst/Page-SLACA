@@ -1,0 +1,7 @@
+:root{
+    --color-font-card: #4E4E4E;
+}
+#mais{
+    /* Construindo o leia mais do resumo */
+    display:none;
+}
