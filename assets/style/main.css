@@ -1,17 +1,20 @@
 html{
-    /*Bakgrounds */
+
+    /* colors title */
     --color-title-orange: #ED7839;
     --color-title-geral: #4E4E4E;
-
-
+    
+    
+    /*Bakgrounds */
     --color-background-oranged: #FDF1EB;
     --color-background-light: #F5F5F5;
+  
 
     --font-white: #FFFFFF;
-    --font-menu: #725C5C;
+    --font-info: #725C5C;
 
 
-    /* cores para gradiente aside */
+    /* colors for gradient aside */
     --orange-light: #FFB354;
     --orange-dark: #EE7A3A;
 
@@ -27,6 +30,8 @@ html{
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+
+    list-style: none;
 }
 .content-wrapper {
     width: 84%;
@@ -41,11 +46,13 @@ aside{
     position: fixed;
 
 }
+
+/* Estilo menu lateral */
 aside >  #title-event{
     background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
     color: var(--font-white);
     font-weight: 700;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     
 }
@@ -59,14 +66,69 @@ aside >  #title-event{
 }
 .option-event a:link {
     background: var(--color-background-light);
-    color: var(--font-menu);
+    color: var(--font-info);
     font-weight: bold;
     text-decoration: none;
     padding: 8px;
     display: block;
 }
 
+/* Estilo conteudo da página */
+
+.content-wrapper{
+    background: var(--color-background-light);
+
+}
+.content-wrapper > header{
+    background-color: var(--color-background-oranged);
+    color: var(--font-info);
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 1em ;
+
+}
+.profille > #login{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#login > img {
+    border-radius: 50%;
+    margin-left: 1em;
+}
+/* Corpo da página */
+main{
+    padding: 2em;
+}
+#apresentation-main{
+    display: inline;
+}
+#apresentation-main > .title-color {
+    font-weight:900;
+}
+.title-color{
+    color: var(--color-title-orange);
+
+}
+#apresentation-section{
+    height: 100%;
+}
+
+#card-info{
+    width: 15.12rem;
+    border: solid 1px #dbd3d3;
+}
+#card-info  h3{
+    background: var(--color-background-oranged);
+    border: solid 1px #dbd3d3;
+}
 #mais{
     /* Construindo o leia mais do resumo */
     display:none;
+}
+footer > img{
+    width: 100%;
 }
