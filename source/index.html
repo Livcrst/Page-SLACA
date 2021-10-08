@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
     <link rel="stylesheet" href="/assets/style/main.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
@@ -199,18 +200,42 @@
                     <div id="discussions">
                         <h3>Discussões</h3>
                     </div>
-                    <div id="content-discussions">
+                    <div id="share">
+
+                        <div id="content-discussions">
+                            <div class="title-color">
+                                <p><b>Compartilhe suas ideias ou dúvidas com os autores!</b></p>
+                            </div>
+                            <div id="icons-discission">
+                                <img src="/assets/img/apoie.svg">
+                                <img src="/assets/img/questions.svg">
+                                <img src="/assets/img/colaborate.svg">
+                            </div>
+                        </div>
+
+                        <button id="ad-topic"> + criar tópico </button>
+                    </div>
+                    
+                    <div class="content-cards card">
                         <div class="title-color">
-                            <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
+                            <h3>Assunto da pergunta aparece aqui</h3>
+                        </div>
+                        <p class="name-author-question ">
+                            Carlos Henrique Santos
+                        </p>
+                        <p class="content-discussion">
+                            Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                            dimensão e impacto de processo formativo situado impacto de processo formativo
+                            processo...
+                        </p>
+                        <div class="likes-info">
+                            <p class="opt">︙</p>
+                            <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
+                            <p>1 like</p>
+                            <p>1 resposta</p>
                         </div>
                     </div>
-                    <div class="icons-discussion">
-                        <img src="/assets/img/apoie.svg">
-                        <img src="/assets/img/questions.svg">
-                        <img src="/assets/img/colaborate.svg">
-                    </div>
-                    <button> + criar tópico </button>
-                    <div class="card">
+                    <div class="content-cards card">
                         <div class="title-color">
                             <h3>Assunto da pergunta aparece aqui</h3>
                         </div>
@@ -222,19 +247,12 @@
                             dimensão e impacto de processo formativo situado impacto de processo formativo
                             processo...
                         </p>
-                    </div>
-                    <div class="card">
-                        <div class="title-color">
-                            <h3>Assunto da pergunta aparece aqui</h3>
+                        <div class="likes-info">
+                            <p class="opt">︙</p>
+                            <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
+                            <p>1 like</p>
+                            <p>1 resposta</p>
                         </div>
-                        <p class="name-author-question">
-                            Carlos Henrique Santos
-                        </p>
-                        <p class="content-discussion">
-                            Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
-                            dimensão e impacto de processo formativo situado impacto de processo formativo
-                            processo...
-                        </p>
                     </div>
                 </div>
 
@@ -252,7 +270,7 @@
     </section>
 
 
-    <script src="js/scriptJS.js"></script>
+  <script src="js/scriptJS.js"></script> 
 
 </body>
 

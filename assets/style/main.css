@@ -92,8 +92,7 @@ aside >  #title-event{
 
     font-size: 0.8em;
     padding: 0.5em ;
-    font-weight: bold;
-
+    
     line-height: 2em;
 
 }
@@ -177,6 +176,7 @@ main{
     border: solid 1px #dbd3d3;
     margin-top: 0.5em;
     margin-bottom: 2em;
+    color: var(--color-title-geral);
    
 }
 #card-info  #details-work{
@@ -228,12 +228,14 @@ main{
 }
 .content-cards{
     border: solid 1px #dbd3d3;
+    padding-bottom: 1em;
     margin-top: 2em;
     width: 90%;
     margin-left: 2em;
+    height: fit-content;
+    color: var(--color-title-geral);
 }
 #content-abstract{
-    height: 8em;
     line-height: 1.5em;
     padding: 1em;
     
@@ -247,4 +249,54 @@ main{
 #buttonRead{
     background: white;
     color: var(--font-info);
+}
+/* Cards dentro de discussões */
+#share{
+    width: 60%;
+    margin: 2em 12em;
+    border-bottom: 1px solid #CCC;
+}
+#share #content-discussions{
+    margin: 2em 4em;
+}
+#icons-discission{
+    margin: 1em;
+    padding-top: 1em;
+
+}
+#icons-discission img{
+    margin-left: 3em;
+}
+#ad-topic{
+    color: var(--font-white);
+    font-weight: bold;
+    font-size: 1em;
+
+    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+
+    width: 10em;
+    padding: 0.5em;
+    margin-left: 10em;
+    margin-bottom: -20em;
+}
+
+.card{
+    padding: 2em;
+}
+.likes-info{
+    display: flex;
+    padding: 0.5em;
+}
+.likes-info > p,button {
+    margin: 0.5em;
+}
+.like{
+    background: var(--orange-dark);
+    width:2em;
+}
+.opt{
+    font-weight: 900;
+    color: var(--orange-dark);
 }
