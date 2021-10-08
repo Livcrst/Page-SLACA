@@ -59,6 +59,13 @@ aside >  #title-event{
 #title-event+h1{
     font-weight: bold;
 }
+#languages{
+    padding:1rem 0;
+}
+#languages, select{
+    background: var(--color-background-oranged);
+
+}
 
 .option-event > li {
     margin: 0px; padding: 0px;
@@ -163,6 +170,10 @@ main{
 /* titulos em laranja */
 .title-color{
     color: var(--color-title-orange);
+}
+.title-color h2{
+    font-weight: bold;
+    font-size:1.5em;
 }
 .title-color a {
     color: var(--color-title-orange);
@@ -272,7 +283,7 @@ main{
     font-weight: bold;
     font-size: 1em;
 
-    background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+    background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 4px;
 
@@ -299,4 +310,7 @@ main{
 .opt{
     font-weight: 900;
     color: var(--orange-dark);
+}
+footer > img{
+    margin-top: 5em;
 }
