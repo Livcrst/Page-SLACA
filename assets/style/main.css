@@ -33,7 +33,7 @@ html{
 
     list-style: none;
 }
-.content-wrapper {
+.content-wrapper, footer > img {
     width: 84%;
     float: right;
 
@@ -51,7 +51,7 @@ aside{
 aside >  #title-event{
     background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
     color: var(--font-white);
-    padding: 2rem;
+    padding: 2.2rem;
     text-align: center;
     
     
@@ -212,10 +212,39 @@ main{
 #author-info li{
     line-height: 1.5em;
 }
-#mais{
+/* Cards da página */
+#abstract-content{
+    border: solid 15px #000;
+}
+/* Titulos dos cards */
+#barbage{
+    background-color:white;
+    color: white;
+}
+#resume,#discussions{
+    background-color: var(--color-background-oranged);
+    border: solid 1px #dbd3d3;
+    padding: 1em;
+}
+.content-cards{
+    border: solid 1px #dbd3d3;
+    margin-top: 2em;
+    width: 90%;
+    margin-left: 2em;
+}
+#content-abstract{
+    height: 8em;
+    line-height: 1.5em;
+    padding: 1em;
+    
+    text-align:justify;
+	text-justify:inter-word;
+}
+#more{
     /* Construindo o leia mais do resumo */
     display:none;
 }
-footer > img{
-    width: 100%;
+#buttonRead{
+    background: white;
+    color: var(--font-info);
 }
