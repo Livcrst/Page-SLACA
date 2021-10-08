@@ -1,0 +1,39 @@
+html{
+    /*Bakgrounds */
+    --color-background-oranged: #FDF1EB;
+    --color-background-light: #F5F5F5;
+
+    --orange-light: #FFB354;
+    --orange-dark: #EE7A3A;
+    /*  transition: 1s all; */
+      
+}
+
+#languages:hover{
+    cursor: pointer;
+}
+.option-event  a:hover{
+    background: var(--color-background-oranged);
+    margin-left: 1em;
+    transform: scale(1.1);
+
+}
+.controls button:hover{
+    background: var(--orange-light);
+    cursor: pointer;
+}
+.title-color a:hover{
+    color:var(--orange-light);
+}
+#buttonRead:hover{
+    cursor: pointer;
+    color: var(--orange-dark);
+}
+#ad-topic:hover{
+    transform: scale(1.1);
+    background-color: var(--orange-dark);
+
+}
+.like:hover{
+    background: var(--orange-light);
+}

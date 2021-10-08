@@ -64,18 +64,19 @@ aside >  #title-event{
 }
 #languages, select{
     background: var(--color-background-oranged);
+    color: var(--color-title-geral);
+    font-weight: bold;
 
 }
-
 .option-event > li {
     margin: 0px; padding: 0px;
     border-bottom: 1px solid #CCC;
     text-align: left;
     list-style-type: none;
-
 }
 .option-event a{
     font-weight: bold;
+   
 }
 .option-event a:link {
     background: white;
@@ -147,12 +148,14 @@ main{
    display: flex;
    justify-content: center;
    text-align: center;
+   
 }
 .controls button{
     color: var(--font-white);
     background-color: var(--color-title-orange);
     margin: 0.2em;
     border-radius: 8%;
+    transition: 1s all;
 }
 .controls #download{
     width: 8em;
@@ -179,6 +182,7 @@ main{
     color: var(--color-title-orange);
     font-weight: bold;
     font-size: 0.9em;
+    transition: 1s all;
 }
 /* Card de info dos autores */
 #card-info{
@@ -291,6 +295,8 @@ main{
     padding: 0.5em;
     margin-left: 10em;
     margin-bottom: -20em;
+
+    transition: 1s all;
 }
 
 .card{
