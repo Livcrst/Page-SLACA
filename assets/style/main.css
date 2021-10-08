@@ -51,10 +51,13 @@ aside{
 aside >  #title-event{
     background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
     color: var(--font-white);
-    font-weight: 700;
     padding: 2rem;
     text-align: center;
     
+    
+}
+#title-event+h1{
+    font-weight: bold;
 }
 
 .option-event > li {
@@ -64,10 +67,12 @@ aside >  #title-event{
     list-style-type: none;
 
 }
-.option-event a:link {
-    background: var(--color-background-light);
-    color: var(--font-info);
+.option-event a{
     font-weight: bold;
+}
+.option-event a:link {
+    background: white;
+    color: var(--font-info);
     text-decoration: none;
     padding: 8px;
     display: block;
@@ -76,54 +81,136 @@ aside >  #title-event{
 /* Estilo conteudo da página */
 
 .content-wrapper{
-    background: var(--color-background-light);
+    background: white;
 
 }
-.content-wrapper > header{
+.content-wrapper  header{
     background-color: var(--color-background-oranged);
     color: var(--font-info);
     display: flex;
     justify-content: space-between;
 
     font-size: 0.8em;
-    font-weight: 700;
-    padding: 1em ;
+    padding: 0.5em ;
+    font-weight: bold;
+
+    line-height: 2em;
 
 }
+
 .profille > #login{
     display: flex;
     justify-content: center;
     text-align: center;
+    line-height: 1em;
 }
 #login > img {
     border-radius: 50%;
     margin-left: 1em;
+    display: flex;
+    justify-content: center;
 }
 /* Corpo da página */
 main{
     padding: 2em;
 }
-#apresentation-main{
-    display: inline;
+/*  Primeira seção do site*/
+
+#apresentation-main {
+    width: 75%;
+    float: left;
+
 }
-#apresentation-main > .title-color {
-    font-weight:900;
+#apresentation-main h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.5em;
 }
+#apresentation-info{
+    width: 25%;
+    margin: 0; padding: 0;
+    float: right;
+}
+/* video */
+#apresentation{
+    margin: 1.5em;
+}
+/* botões do card info */
+.controls{
+   padding: 1em;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+.controls button{
+    color: var(--font-white);
+    background-color: var(--color-title-orange);
+    margin: 0.2em;
+    border-radius: 8%;
+}
+.controls #download{
+    width: 8em;
+    padding: 0.5em;
+
+}
+.controls #favorite{
+    width: 3em;
+    padding: 0.5em;
+}
+.controls #doi{
+    width: 4em;
+    padding: 0.2em;
+}
+/* titulos em laranja */
 .title-color{
     color: var(--color-title-orange);
-
 }
-#apresentation-section{
-    height: 100%;
+.title-color a {
+    color: var(--color-title-orange);
+    font-weight: bold;
+    font-size: 0.9em;
 }
-
+/* Card de info dos autores */
 #card-info{
     width: 15.12rem;
+    height: 29em;
     border: solid 1px #dbd3d3;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+   
+}
+#card-info  #details-work{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 25em;
+    width: 100%;
 }
 #card-info  h3{
     background: var(--color-background-oranged);
     border: solid 1px #dbd3d3;
+}
+
+#card-info div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+#card-info #detail-name{
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+#card-info #details-work{
+    padding: 0.5em;
+}
+#details-work #details-data, #details-autor-name{
+    margin-bottom: 1em;
+    line-height: 1.5em;
+}
+#author-info li{
+    line-height: 1.5em;
 }
 #mais{
     /* Construindo o leia mais do resumo */
