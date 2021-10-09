@@ -220,7 +220,21 @@
                             </div>
                         </div>
 
-                        <button onclick="AddTopic()" id="ad-topic"> + criar tópico </button>
+                        <button onclick="AddTopic()" id="ad-topic"> + criar  tópico </button>
+                    </div>
+                    <!-- Novo Tópico adicionado card -->
+                    <div id="topic-sent">
+                        
+                        <div id="sent-sucess">
+                            <div class="title-color">
+                                <p><b>Seu tópico foi enviado com sucesso! :D </b></p>
+                            </div>
+                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                            <div class="title-color">
+                                <p id = "discover">Descubra outros trabalhos!</p>
+                            </div>
+                            <button onclick="AddTopic()" id="ad-topic"> + criar  tópico </button>
+                        </div>
                     </div>
                     <!-- Para a adção de um novo tópico de discussão -->
                     <div id="new-topic">
@@ -237,9 +251,16 @@
                         <textarea name="conteudo" id="content-textearea" cols="30" rows="10" ></textarea>
                         <button onclick="SendTopic()" id="send">Enviar</button>
                     </div>
-                    <!-- Topico enviado -->
+                    <!-- Topico enviado ESTILIZAR AQUI VEI-->
 
-                    <div id="discussion-topic" class="content-cards card">
+                    <div id="discussion-topic">
+                        <img src="/assets/img/done.svg">
+                        <p>Aguardando feedback dos autores</p>
+                        <h4>Editar tópico</h4>
+                        
+                    </div>                        
+
+                    <div class="content-cards card">
                         <div class="title-color">
                             <h3>Assunto da pergunta aparece aqui</h3>
                         </div>
@@ -255,7 +276,7 @@
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
                             <button class="reply">1 like</button>
-                            <button class="reply">1 resposta</button>
+                            <button class="reply">0 resposta</button>
 
 
                         </div>
@@ -277,80 +298,84 @@
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
                             <button class="reply">4 likes</button>
-                            <button reply onclick="Replies()" class="reply">4 respostas</button>
+                            <button id="reply-coment" onclick="Replies()" class="reply">4 respostas</button>
                         
                         
                         </div>
-                        <div class="reply-author card-reply">
-                            <div class="reply-info">
-                                <p class="name-author-reply">
-                                    Adriano da Silva
-                                </p>
-                                <div class="check-user">
-                                    <!-- O user é um participante ou um dos autores do trabalho -->
-                                    <p class="title-author-reply">
-                                        Autor
-                                    </p>
-                                    <img src="/assets/img/check.svg" >
-                                </div>
-                            </div>
-                            <p class="coment">
-                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </p>
 
-                        </div>
-                        <div class="reply-participant card-reply">
-                            <div class="reply-info participant">
-                                <p class="name-author-reply ">
-                                    Carlos Henrique dos Santos
-                                </p>
+                        <div id="replies">
+                            <div class="reply-author card-reply">
+                                <div class="reply-info">
+                                    <p class="name-author-reply">
+                                        Adriano da Silva
+                                    </p>
+                                    <div class="check-user">
+                                        <!-- O user é um participante ou um dos autores do trabalho -->
+                                        <p class="title-author-reply">
+                                            Autor
+                                        </p>
+                                        <img src="/assets/img/check.svg" >
+                                    </div>
+                                </div>
                                 <p class="coment">
-                                    Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br><br><br>
-
-                                    Obrigada pela resposta, muito interessante o seu trabalho! 
+                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
                                 </p>
+    
                             </div>
-
-                        </div>
-                        <div class="reply-coauthor card-reply">
-                            <div class="reply-info">
-                                <p class="name-author-reply">
-                                    Camila Ferreira Andrade
-                                </p>
-                                <div class="check-user">
-                                    <!-- O user é um participante ou um dos autores do trabalho -->
-                                    <p class="title-author-reply">
-                                        Coautor
+                            <div class="reply-participant card-reply">
+                                <div class="reply-info participant">
+                                    <p class="name-author-reply ">
+                                        Carlos Henrique dos Santos
                                     </p>
-                                    <img src="/assets/img/check.svg" >
-                                </div>
-                            </div>
-                            <p class="coment">
-                                Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br><br><br>
-
-                                Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </p>
-
-                        </div>
-                        <div class="reply-coauthor card-reply">
-                            <div class="reply-info">
-                                <p class="name-author-reply">
-                                   Ana Carolina 
-                                </p>
-                                <div class="check-user">
-                                    <!-- O user é um participante ou um dos autores do trabalho -->
-                                    <p class="title-author-reply">
-                                        Coautor
+                                    <p class="coment">
+                                        Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br><br><br>
+    
+                                        Obrigada pela resposta, muito interessante o seu trabalho! 
                                     </p>
-                                    <img src="/assets/img/check.svg" >
                                 </div>
+    
                             </div>
-                            <p class="coment">
-                                Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </p>
-                            
+                            <div class="reply-coauthor card-reply">
+                                <div class="reply-info">
+                                    <p class="name-author-reply">
+                                        Camila Ferreira Andrade
+                                    </p>
+                                    <div class="check-user">
+                                        <!-- O user é um participante ou um dos autores do trabalho -->
+                                        <p class="title-author-reply">
+                                            Coautor
+                                        </p>
+                                        <img src="/assets/img/check.svg" >
+                                    </div>
+                                </div>
+                                <p class="coment">
+                                    Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br><br><br>
+    
+                                    Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+    
+                            </div>
+                            <div class="reply-coauthor card-reply">
+                                <div class="reply-info">
+                                    <p class="name-author-reply">
+                                       Ana Carolina 
+                                    </p>
+                                    <div class="check-user">
+                                        <!-- O user é um participante ou um dos autores do trabalho -->
+                                        <p class="title-author-reply">
+                                            Coautor
+                                        </p>
+                                        <img src="/assets/img/check.svg" >
+                                    </div>
+                                </div>
+                                <p class="coment">
+                                    Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                                </p>
+                                
+                            </div>
+    
                         </div>
-
+                        
                 </div>
 
 

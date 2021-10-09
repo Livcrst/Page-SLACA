@@ -1,6 +1,14 @@
+
+
+
+
+
+
+
 #topic-send{
     display: none;  
-    padding:2em 15em;
+    height: fit-content;
+    padding:2em 5em;
     line-height:2em;
     background: var(--color-background-light);
 
@@ -18,31 +26,3 @@
 	text-justify:inter-word;
     padding-left: 2em;
 }
-
-
-<div send id = "topic-send" class="content-cards card">
-<img src="/assets/img/done.svg">
-<p>Aguardando feedback dos autores</p>
-<h4>Editar tópico</h4>
-
-</div>
-
-
-
-const SendTopic = () => {
-    let sendTopic = document.getElementById("topic-send");
-    let discussionTopic = document.getElementById("topic-discussion");
-    // let sendButton = document.getElementById('send');
-
-    // Criar a tela de enviado para o card 
-    if (sendTopic.style.display == "none"){
-        sendTopic.style.display = "none";
-    }
-    else{
-        sendTopic.style.display = "inline";
-        discussionTopic.style.height = "600px";
-        
-
-    }
-
-};

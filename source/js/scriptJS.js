@@ -26,8 +26,26 @@ const AddTopic = ()=>{
 
 };
 
+const SendTopic = () => {
+    let sendTopic = document.getElementById("sent-sucess");
+    let discussion = document.getElementById("discussion-topic");
+    let topic = document.getElementById("new-topic");
+    
+    
+
+    sendTopic.style.display = "block";
+    discussion.style.display = "block";
+    topic.style.display = "none";
+
+};
+
 const Replies = () => {
-    let replyDiscussions = document.querySelectorAll("[reply]");
-    console.log(replyDiscussions)
+    let replyDiscussions = document.getElementById("reply-coment");
+    let cardsReply = document.getElementById("replies");
+
+    replyDiscussions.style.color = 'orange';
+    replyDiscussions.style.textDecoration = "underline";
+
+    cardsReply.style.display = "inline";
 }
 

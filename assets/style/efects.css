@@ -46,3 +46,6 @@ html{
 .like:hover{
     background: var(--orange-light);
 }
+#discussion-topic h4:hover{
+    cursor: pointer;
+}
