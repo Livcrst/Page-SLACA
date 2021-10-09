@@ -333,7 +333,7 @@ textarea {
     margin-left: 42em;
 }
 #topic-send{
-    display: none; 
+    /* display: none;  */
     padding:2em 15em;
     line-height:2em;
     background: var(--color-background-light);
