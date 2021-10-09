@@ -235,14 +235,15 @@
                             <p><b>Conteúdo</b></p>
                         </div>
                         <textarea name="conteudo" id="content-textearea" cols="30" rows="10" ></textarea>
-                        <button id="send">Enviar</button>
+                        <button onclick="SendTopic()" id="send">Enviar</button>
                     </div>
-
-                    <!-- tópico enviado -->
-                    <ul id="sents" class="sent">
-
-                    </ul>
+                    <!-- Tópico enviado -->
+                    <div send id = "topic-send" class="content-cards card">
+                        <img src="/assets/img/done.svg">
+                        <p>Aguardando feedback dos autores</p>
+                        <h4>Editar tópico</h4>
                     
+                    </div>
                     <div class="content-cards card">
                         <div class="title-color">
                             <h3>Assunto da pergunta aparece aqui</h3>
@@ -258,17 +259,18 @@
                         <div class="likes-info">
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
-                            <p>1 like</p>
-                            <button id="reply">1 resposta</button>
+                            <button class="reply">1 like</button>
+                            <button class="reply">1 resposta</button>
 
 
                         </div>
                     </div>
+
                     <div class="content-cards card">
                         <div class="title-color">
                             <h3>Assunto da pergunta aparece aqui</h3>
                         </div>
-                        <p class="name-author-question">
+                        <p class="name-author-question ">
                             Carlos Henrique Santos
                         </p>
                         <p class="content-discussion">
@@ -279,10 +281,11 @@
                         <div class="likes-info">
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
-                            <p>1 like</p>
-                            <button id="reply">1 resposta</button>
+                            <button class="reply">1 like</button>
+                            <button class="reply">1 resposta</button>
+                        
+                        
                         </div>
-                    </div>
                 </div>
 
 

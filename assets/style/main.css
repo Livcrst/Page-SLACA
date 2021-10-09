@@ -330,6 +330,33 @@ textarea {
 }
 #send{
     transition: 1s all;
+    margin-left: 42em;
+}
+#topic-send{
+    display: none; 
+    padding:2em 15em;
+    line-height:2em;
+    background: var(--color-background-light);
+
+}
+#topic-send > img{
+
+    padding-left: 5em;
+
+}
+#topic-send > h4{
+    font-weight: normal;
+    color: var(--color-title-orange);
+    text-decoration: underline;
+    text-align:justify;
+	text-justify:inter-word;
+    padding-left: 2em;
+}
+.reply{
+    font-family: 'roboto','sans-serif';
+    font-size: 1em;
+    background: white;
+    color: var(--color-title-geral);
 }
 .card{
     padding: 2em;
