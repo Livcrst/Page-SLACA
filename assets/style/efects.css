@@ -34,6 +34,11 @@ html{
     background-color: var(--orange-dark);
 
 }
+#send:hover{
+    transform: scale(1.1);
+    background-color: var(--orange-dark);
+
+}
 .like:hover{
     background: var(--orange-light);
 }

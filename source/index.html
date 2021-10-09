@@ -220,8 +220,28 @@
                             </div>
                         </div>
 
-                        <button id="ad-topic"> + criar tópico </button>
+                        <button onclick="AddTopic()" id="ad-topic"> + criar tópico </button>
                     </div>
+                    <!-- Para a adção de um novo tópico de discussão -->
+                    <div id="new-topic">
+                        <div id = "topic-name">
+                            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                        </div>
+                        <div class="title-color">
+                            <h3>Assunto</h3>
+                        </div>
+                        <input type="text" placeholder="Defina um tópico sucinto para notificar os autores">
+                        <div class="title-color">
+                            <p><b>Conteúdo</b></p>
+                        </div>
+                        <textarea name="conteudo" id="content-textearea" cols="30" rows="10" ></textarea>
+                        <button id="send">Enviar</button>
+                    </div>
+
+                    <!-- tópico enviado -->
+                    <ul id="sents" class="sent">
+
+                    </ul>
                     
                     <div class="content-cards card">
                         <div class="title-color">
@@ -239,7 +259,9 @@
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
                             <p>1 like</p>
-                            <p>1 resposta</p>
+                            <button id="reply">1 resposta</button>
+
+
                         </div>
                     </div>
                     <div class="content-cards card">
@@ -258,7 +280,7 @@
                             <p class="opt">︙</p>
                             <button class="like"><img   src="/assets/img/heart.svg" alt="like botao"></button>
                             <p>1 like</p>
-                            <p>1 resposta</p>
+                            <button id="reply">1 resposta</button>
                         </div>
                     </div>
                 </div>

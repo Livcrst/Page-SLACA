@@ -266,10 +266,40 @@ main{
     color: var(--font-info);
 }
 /* Cards dentro de discussões */
-#share{
+#share, #topic-name{
     width: 60%;
     margin: 2em 12em;
     border-bottom: 1px solid #CCC;
+}
+#topic-name{
+    width: 90%;
+    border: none;
+    margin: 2em;
+}
+#new-topic{
+
+    padding-bottom: 1em;
+    margin-top: 2em;
+    width: 90%;
+    margin-left: 2em;
+    color: var(--color-title-geral);
+    display: none;
+
+}
+#new-topic div{
+    padding: 0.8em 3em;
+}
+#new-topic input, textarea {
+    padding: 0.3em;
+    margin: 0 5em;
+}
+#new-topic input, textarea {
+    width: 80%;
+    border: 1px solid #CCC;
+
+}
+textarea {
+    resize: none;
 }
 #share #content-discussions{
     margin: 2em 4em;
@@ -282,7 +312,7 @@ main{
 #icons-discission img{
     margin-left: 3em;
 }
-#ad-topic{
+#ad-topic, #send{
     color: var(--font-white);
     font-weight: bold;
     font-size: 1em;
@@ -298,7 +328,9 @@ main{
 
     transition: 1s all;
 }
-
+#send{
+    transition: 1s all;
+}
 .card{
     padding: 2em;
 }
