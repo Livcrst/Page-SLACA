@@ -332,26 +332,7 @@ textarea {
     transition: 1s all;
     margin-left: 42em;
 }
-#topic-send{
-    /* display: none;  */
-    padding:2em 15em;
-    line-height:2em;
-    background: var(--color-background-light);
-
-}
-#topic-send > img{
-
-    padding-left: 5em;
-
-}
-#topic-send > h4{
-    font-weight: normal;
-    color: var(--color-title-orange);
-    text-decoration: underline;
-    text-align:justify;
-	text-justify:inter-word;
-    padding-left: 2em;
-}
+/* Ajeitar aqui a questão do envio do tópico de discussões*/
 .reply{
     font-family: 'roboto','sans-serif';
     font-size: 1em;
@@ -378,4 +359,38 @@ textarea {
 }
 footer > img{
     margin-top: 5em;
+}
+/* Comentarios da discussão */
+.reply-author,.reply-coauthor,.reply-participant{
+    height: fit-content;
+    border: 1px solid #CCC;
+}
+.reply-author, .reply-coauthor{
+    background: var(--color-background-light);
+}
+.name-author-reply{
+    font-weight: bold;
+    color: var(--color-title-geral);
+}
+.title-author-reply{
+    font-weight: bold;
+    color: var(--color-title-orange);
+}
+.reply-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card-reply{
+    padding: 1em;
+     
+    text-align:justify;
+	text-justify:inter-word;
+
+    line-height: 1.5em;
+}
+.participant{
+    display: block;
+}
+.check-user > p, img{
+    display: inline;
 }

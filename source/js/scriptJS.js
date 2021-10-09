@@ -26,18 +26,8 @@ const AddTopic = ()=>{
 
 };
 
-const SendTopic = () => {
-    let sendTopic = document.getElementById("topic-send");
-    // let sendButton = document.getElementById('send');
-
-    // Criar a tela de enviado para o card 
-    if (sendTopic.style.display =! "none"){
-        sendTopic.style.display = "none";
-    }
-    else{
-        sendTopic.style.display = "inline";
-
-    }
-
-};
+const Replies = () => {
+    let replyDiscussions = document.querySelectorAll("[reply]");
+    console.log(replyDiscussions)
+}
 
