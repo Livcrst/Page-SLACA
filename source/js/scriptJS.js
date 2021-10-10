@@ -8,7 +8,7 @@ function readMore() {
     if(elip.style.display != "none"){
        
         moreRead.style.display = "inline";
-        abstract.style.height = "500px";
+        abstract.style.height = "fit-content";
         butRead.style.display = "none";
     }
 
