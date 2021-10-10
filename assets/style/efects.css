@@ -29,6 +29,11 @@ html{
     cursor: pointer;
     color: var(--orange-dark);
 }
+#buttonRead:active{
+
+    color: var(--orange-dark);
+    
+}
 #ad-topic:hover{
     transform: scale(1.1);
     background-color: var(--orange-dark);

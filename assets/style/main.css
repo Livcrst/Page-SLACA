@@ -37,7 +37,7 @@ html{
     width: fit-content;
     height: fit-content;
 }
-.content-wrapper, footer > img {
+.content-wrapper{
     width: 84%;
     float: right;
 
@@ -417,7 +417,7 @@ textarea {
 }
 footer > img{
     margin-top: 5em;
-    
+   
 
 }
 /* Comentarios da discussão */
