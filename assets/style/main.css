@@ -1,28 +1,34 @@
 html{
 
-    /* colors title */
-    --color-title-orange: #ED7839;
-    --color-title-geral: #4E4E4E;
-    
-    
-    /*Bakgrounds */
-    --color-background-oranged: #FDF1EB;
-    --color-background-light: #F5F5F5;
-  
+    /* Colors from Design */
 
-    --font-white: #FFFFFF;
-    --font-info: #725C5C;
+    /* Geral: Title and button */
+
+    --color-orange: #ED7839;
+    --color-gray-dark: #4E4E4E;
+
+    /* Color font for menu, header */
+
+    --color-gray-light: #725C5C;
+
+    /* Color font info-profiler */
+
+    --color-info-profiler: #333333;
+
+    /* Backgrounds */
+
+    --background-orange: #FDF1EB;
+    --background-geral: #E5E5E5;
+    --background-white: #FFFFFF;
+
+    /* Gradient */
+
+    --gradient-event: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
 
 
-    /* colors for gradient aside */
-    --orange-light: #FFB354;
-    --orange-dark: #EE7A3A;
-
-    /* font-size: 62.5% /* 10px  */
-
-    /* Font */
+    /* No found Segeo UI in open source catolog */
+    /* font-family: 'Quicksand', sans-serif; */
     font-family: 'Roboto', sans-serif;
-
 }
 *{
     margin: 0;
@@ -33,6 +39,7 @@ html{
 
     list-style: none;
 }
+
 #aplication{
     width: fit-content;
     height: fit-content;
@@ -53,8 +60,11 @@ aside{
 
 /* Estilo menu lateral */
 aside >  #title-event{
-    background: linear-gradient(180deg, var(--orange-light) 0%, var(--orange-dark) 100%);
-    color: var(--font-white);
+    background: var(--gradient-event);
+    font-family: 'Roboto', sans-serif;
+    color: var(--background-white);
+    font-style: normal;
+    font-weight: 700;
     padding: 2.2rem;
     text-align: center;
     
@@ -63,9 +73,7 @@ aside >  #title-event{
 aside #image-event{
     width: 100%;
 }
-#title-event+h1{
-    font-weight: bold;
-}
+
 #languages{
     padding:1rem 0;
 }
@@ -75,6 +83,13 @@ aside #image-event{
     font-weight: bold;
 
 }
+.menu, #login{
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    color: var(--color-gray-light);
+    
+}
 .option-event > li {
     margin: 0px; padding: 0px;
     border-bottom: 1px solid #CCC;
@@ -82,7 +97,7 @@ aside #image-event{
     list-style-type: none;
 }
 .option-event a{
-    font-weight: bold;
+    font-weight: 500;
    
 }
 .option-event a:link {
@@ -100,12 +115,13 @@ aside #image-event{
 
 }
 .content-wrapper  header{
-    background-color: var(--color-background-oranged);
-    color: var(--font-info);
+    background-color: var(--background-orange);
+    color: var(--color-gray-light);
     display: flex;
     justify-content: space-between;
 
     font-size: 0.8em;
+    font-weight: 400;
     padding: 0.5em ;
     
     line-height: 2em;
@@ -116,6 +132,7 @@ aside #image-event{
 .profille > #login{
     display: flex;
     justify-content: center;
+    color: var(--color-info-profiler);
     text-align: center;
     line-height: 1em;
 }
@@ -162,11 +179,15 @@ main{
    
 }
 .controls button{
-    color: var(--font-white);
-    background-color: var(--color-title-orange);
+    color: var(--background-white);
+    background-color: var(--color-orange);
     margin: 0.2em;
     border-radius: 8%;
     transition: 1s all;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
 }
 .controls #download{
     width: 8em;
@@ -182,17 +203,21 @@ main{
     padding: 0.2em;
 }
 /* titulos em laranja */
-.title-color{
-    color: var(--color-title-orange);
+.title-orange{
+    color: var(--color-orange);
+    font-family: 'Roboto', sans-serif;
 }
-.title-color h2{
-    font-weight: bold;
+.title-orange h2{
+    font-style: normal;
+    font-weight: 400;
     font-size:1.5em;
 }
-.title-color a {
-    color: var(--color-title-orange);
-    font-weight: bold;
+.title-orange a {
+    color: var(--color-orange);
+    font-style: normal;
+    font-weight: 500;
     font-size: 0.9em;
+    text-align: right;
     transition: 1s all;
 }
 /* Card de info dos autores */
