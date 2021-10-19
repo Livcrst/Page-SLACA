@@ -1,0 +1,24 @@
+.menu, #login{
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    color: var(--color-gray-light);
+    
+}
+.option-event > li {
+    margin: 0px; padding: 0px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    list-style-type: none;
+}
+.option-event a{
+    font-weight: 500;
+   
+}
+.option-event a:link {
+    background: white;
+    color: var(--font-info);
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}

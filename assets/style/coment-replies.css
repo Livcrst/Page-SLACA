@@ -1,0 +1,57 @@
+/* Comentarios da discussão */
+.name-author-question{
+    font-weight: bold;
+}
+
+.reply-author,.reply-coauthor,.reply-participant{
+    height: fit-content;
+    border: 1px solid var(--border);
+}
+.reply-author, .reply-coauthor{
+    background: var(--background-card-reply);
+
+}
+.name-author-reply{
+    font-weight: 700;
+    color: var(--color-gray-base);
+}
+.title-author-reply{
+    font-weight: 700;
+    color: var(--color-orange);
+}
+.coment{
+    color: var(--color-gray-content);
+    font-weight: 400;
+}
+.reply-info{
+    display: flex;
+    justify-content: space-between;
+}
+.card-reply{
+    padding: 1em;
+     
+    text-align:justify;
+	text-justify:inter-word;
+
+    line-height: 1.5em;
+}
+.participant{
+    display: block;
+}
+.check-user > p, img{
+    display: inline;
+}
+.reply{
+    font-family: 'Quicksand',sans-serif;
+    color: #757575;
+    background: white;
+    font-size: 1em;
+    
+}
+
+#replies{
+    display: none;
+    font-family: 'Quicksand',sans-serif;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
