@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Style CSS -->
     <link rel="stylesheet" href="/assets/style/main.css">
-    <link rel="stylesheet" href="/assets/style/resposive.css">
+    <!-- <link rel="stylesheet" href="/assets/style/resposive.css"> -->
     <link rel="stylesheet" href="/assets/style/efects.css">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
     <title>SLACA 2019</title>
@@ -82,7 +83,7 @@
                 <section id="apresentation-section" apresentacao>
 
                     <div id="apresentation-main">
-                        <div class="title-color">
+                        <div class="title-orange">
                             <h2>
                                 <strong>Análise Sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15
                                     anos, do municipio de Campinas/SP.</strong>
@@ -109,12 +110,12 @@
                                 <img src="/assets/img/doi.svg">
                             </button>
                         </div>
-                        <div class="title-color">
+                        <div class="title-orange">
                             <a href="#">COMO DEVO CITAR ESSE TRABALHO?</a>
                         </div>
                         <div id="card-info">
                             <div id="detail-work">
-                                <h3 id="detail-name"><b>Detalhes</b></h3>
+                                <h3 class="title-gray" id="detail-name"><b>Detalhes</b></h3>
                                 <div id="details-work">
                                     <div id="details-data">
 
@@ -161,7 +162,7 @@
                     .
                 </div>
                 <div class="content-cards">
-                    <div id="resume">
+                    <div class="title-gray" id="resume">
                         <h3><b>Resumo</b></h3>
                     </div>
                     <div class="card" id="abstract">
@@ -204,19 +205,24 @@
                     </div>
                 </div>
                 <div class="content-cards">
-                    <div id="discussions">
+                    <div class="title-gray" id="discussions">
                         <h3>Discussões</h3>
                     </div>
                     <div id="share">
 
                         <div id="content-discussions">
-                            <div class="title-color">
+                            <div class="title-orange">
                                 <p><b>Compartilhe suas ideias ou dúvidas com os autores!</b></p>
                             </div>
                             <div id="icons-discission">
                                 <img src="/assets/img/apoie.svg">
                                 <img src="/assets/img/questions.svg">
                                 <img src="/assets/img/colaborate.svg">
+                            </div>
+                            <div class="do-you-know">
+                                <p>
+                                    Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+                                </p>
                             </div>
                         </div>
 
@@ -226,11 +232,11 @@
                     <div id="topic-sent">
                         
                         <div id="sent-sucess">
-                            <div class="title-color">
+                            <div class="title-orange">
                                 <p><b>Seu tópico foi enviado com sucesso! :D </b></p>
                             </div>
-                            <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
-                            <div class="title-color">
+                            <p id = "thank">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                            <div class="title-orange">
                                 <p id = "discover">Descubra outros trabalhos!</p>
                             </div>
                             <button onclick="AddTopic()" id="ad-topic"> + criar  tópico </button>
@@ -241,11 +247,11 @@
                         <div id = "topic-name">
                             <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                         </div>
-                        <div class="title-color">
+                        <div class="title-orange">
                             <h3>Assunto</h3>
                         </div>
                         <input type="text" placeholder="Defina um tópico sucinto para notificar os autores">
-                        <div class="title-color">
+                        <div class="title-orange">
                             <p><b>Conteúdo</b></p>
                         </div>
                         <textarea name="conteudo" id="content-textearea" cols="30" rows="10" ></textarea>
@@ -260,7 +266,7 @@
                     </div>                        
 
                     <div class="content-cards card">
-                        <div class="title-color">
+                        <div class="title-orange">
                             <h3>Assunto da pergunta aparece aqui</h3>
                         </div>
                         <p class="name-author-question ">
@@ -282,7 +288,7 @@
                     </div>
 
                     <div class="content-cards card">
-                        <div class="title-color">
+                        <div class="title-orange">
                             <h3>Assunto da pergunta aparece aqui</h3>
                         </div>
                         <p class="name-author-question ">
