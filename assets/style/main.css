@@ -13,7 +13,7 @@ html{
 
     /* Color font info-profiler */
 
-    --color-info-profiler: #333333;
+    --color-info-profile: #333333;
 
     /* Backgrounds */
 
@@ -84,7 +84,7 @@ aside #image-event{
 }
 #languages, select{
     background: var(--color-background-oranged);
-    color: var(--color-info-profiler);
+    color: var(--color-info-profile);
     font-weight: 400;
 
 }
@@ -137,9 +137,12 @@ aside #image-event{
 .profille > #login{
     display: flex;
     justify-content: center;
-    color: var(--color-info-profiler);
     text-align: center;
     line-height: 1em;
+}
+.profille p{
+    color: var(--color-info-profile);
+    font-weight: 400;
 }
 #login > img {
     border-radius: 50%;
@@ -152,9 +155,12 @@ main{
     padding: 2em;
 }
 /*  Primeira seção do site*/
+#apresentation{
+    height: 450px;
+}
 #apresentation-video{
     width: 95%;
-    height: 450px;
+    height: 100%;
 }
 #apresentation-main {
     width: 75%;
