@@ -20,6 +20,7 @@ html{
     --background-orange: #FDF1EB;
     --background-geral: #E5E5E5;
     --background-white: #FFFFFF;
+    --background-card-reply: #F8F8F8;
 
     /* Gradient */
 
@@ -84,7 +85,7 @@ aside #image-event{
 #languages, select{
     background: var(--color-background-oranged);
     color: var(--color-info-profiler);
-    font-weight: bold;
+    font-weight: 400;
 
 }
 .menu, #login{
@@ -292,11 +293,7 @@ main{
 #abstract.card{
     height: fit-content;
 }
-#abstract-content{
-    border: solid 15px var(--border);
-    height: fit-content;
 
-}
 /* Titulos dos cards */
 #barbage{
     background-color:white;
@@ -304,12 +301,15 @@ main{
 }
 #resume,#discussions{
     background-color: var(--color-background-oranged);
-    border: solid 1px var(--border);
+    border-bottom: solid 1px var(--border);
     padding: 1em;
 }
 
 .content-cards{
+
     border: solid 1px var(--border);
+    border-radius: 3px;
+
     padding-bottom: 1em;
     margin-top: 2em;
     width: 90%;
@@ -358,11 +358,13 @@ main{
 #new-topic input, textarea {
     padding: 0.3em;
     margin: 0 5em;
-}
-#new-topic input, textarea {
+
     width: 80%;
     border: 1px solid var(--border);
 
+    font-family: 'Quicksand',sans-serif;
+    font-weight: 400;
+    color: var(--color-gray-content);
 }
 #sent-sucess{
     height: fit-content;
@@ -460,6 +462,7 @@ textarea {
 }
 .card{
     padding: 2em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
 }
 .likes-info{
     display: flex;
@@ -491,7 +494,8 @@ footer > img{
     border: 1px solid var(--border);
 }
 .reply-author, .reply-coauthor{
-    background: var(--color-background-light);
+    background: var(--background-card-reply);
+
 }
 .name-author-reply{
     font-weight: 700;
@@ -531,4 +535,6 @@ footer > img{
 #replies{
     display: none;
     font-family: 'Quicksand',sans-serif;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
