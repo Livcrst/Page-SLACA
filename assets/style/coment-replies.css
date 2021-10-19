@@ -44,11 +44,10 @@
 .reply{
     font-family: 'Quicksand',sans-serif;
     color: #757575;
-    background: white;
+    background: var(--background-white);
     font-size: 1em;
     
 }
-
 #replies{
     display: none;
     font-family: 'Quicksand',sans-serif;

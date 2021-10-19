@@ -91,7 +91,7 @@ aside #image-event{
 /* Estilo conteudo da página */
 
 .content-wrapper{
-    background: white;
+    background: var(--background-white);
 
 }
 .content-wrapper  header{
@@ -188,6 +188,10 @@ main{
     width: 4em;
     padding: 0.2em;
 }
+#barbage{
+    background-color: var(--background-white);
+    color: var(--background-white);
+}
 /* titulos em laranja */
 .title-orange{
     color: var(--color-orange);
@@ -228,8 +232,11 @@ main{
     display:none;
 }
 #buttonRead{
-    background: white;
-    color: var(--font-info);
+    background: var(--background-white);
+    color: var(--color-orange);
+    font-weight: 700;
+
+    transition: 1s all;
 }
 .likes-info{
     display: flex;
@@ -239,15 +246,13 @@ main{
     margin: 0.5em;
 }
 .like{
-    background: var(--orange-dark);
+    background: var(--color-orange);
     width:2em;
 }
 .opt{
     font-weight: 900;
-    color: var(--orange-dark);
+    color: var(--color-orange);
 }
 footer > img{
     margin-top: 5em;
-   
-
 }

@@ -16,7 +16,7 @@
    
 }
 .option-event a:link {
-    background: white;
+    background: var(--background-white);
     color: var(--font-info);
     text-decoration: none;
     padding: 8px;
