@@ -79,6 +79,7 @@
 	text-justify:inter-word;
 }
 /* Cards dentro de discussões */
+
 #share, #topic-name{
     width: 60%;
     margin: 2em 12em;
@@ -166,12 +167,12 @@ textarea {
 #share #content-discussions{
     margin: 2em 4em;
 }
-#icons-discission{
+#icons-discussion{
     margin: 1em;
     padding-top: 1em;
 
 }
-#icons-discission img{
+#icons-discussion img{
     margin-left: 3em;
 }
 .do-you-know{

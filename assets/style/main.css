@@ -130,6 +130,10 @@ aside #image-event{
 
 }
 
+header  #login-reduced{
+    display: none;
+}
+
 .profille > #login{
     display: flex;
     justify-content: center;

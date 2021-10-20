@@ -1,0 +1,79 @@
+@media (min-width: 701px) and (max-width: 990px) {
+
+    header #login-reduced{
+        display: block;
+        font-weight: 900;
+    }
+    header .profille{
+        display: none;
+    }
+    .event-data > h2 {
+
+        display: none;
+
+    }
+    #apresentation-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    #apresentation, #apresentation-info{
+        clear: both;
+        width: 100%;
+    }
+    #card-info{
+        width: 90%;
+    }
+    #card-info  #details-work{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 25em;
+
+    }
+    #apresentation-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-event{
+        padding: 0.8em;
+    }
+    .title-orange > h2{
+        font-size: .2em;
+
+    }
+    .content-cards > #share{
+        margin: 0;
+    }
+
+    #content-discussions{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 0; margin: 0;
+    }
+/* 
+    #share{
+
+        width: 80%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+
+        padding: 0.5em;
+    } */
+
+
+
+
+
+}
+
