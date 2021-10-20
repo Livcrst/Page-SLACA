@@ -155,12 +155,13 @@ main{
     padding: 2em;
 }
 /*  Primeira seção do site*/
-#apresentation{
-    height: 450px;
-}
+
 #apresentation-video{
-    width: 95%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+
+    /* padding: 2em; */
+
 }
 #apresentation-main {
     width: 75%;
