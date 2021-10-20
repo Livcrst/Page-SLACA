@@ -75,6 +75,10 @@
         display: inline;
 
     }
+
+    footer > img{
+        width: 100%;
+    }
    
 
 

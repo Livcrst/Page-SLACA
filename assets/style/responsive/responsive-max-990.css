@@ -60,16 +60,10 @@
 
         padding: 0; margin: 0;
     }
-/* 
-    #share{
 
-        width: 80%;
-        height:fit-content;
-        display: flex;
-        flex-direction: column;
-
-        padding: 0.5em;
-    } */
+    footer > img{
+        width: 100%;
+    }
 
 
 

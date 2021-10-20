@@ -98,6 +98,7 @@
     margin-left: 2em;
     display: none;
 
+
 }
 #new-topic div{
     padding: 0.8em 3em;
@@ -199,7 +200,7 @@ textarea {
 }
 #send{
     transition: 1s all;
-    margin-left: 42em;
+    margin: 2em;
 }
 .card{
     padding: 2em;
