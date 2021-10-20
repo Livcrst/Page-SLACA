@@ -49,3 +49,6 @@ const Replies = () => {
     cardsReply.style.display = "inline";
 }
 
+const Toggles = () => {
+    let toggleMenu = document.querySelector("toggle-menu");
+}

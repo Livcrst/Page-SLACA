@@ -22,7 +22,7 @@
     width: 100%;
 }
 #card-info  h3{
-    background: var(--color-background-oranged);
+    background: var(--background-orange);
     border-bottom: solid 1px var(--border);
 }
 
@@ -54,7 +54,7 @@
 /* Titulos dos cards */
 
 #resume,#discussions{
-    background-color: var(--color-background-oranged);
+    background-color: var(--background-orange);
     border-bottom: solid 1px var(--border);
     padding: 1em;
 }
@@ -141,8 +141,9 @@ textarea {
     background: var(--color-background-light);
 
     padding: 2em;
-    border: 1px solid var(--border);
     margin: 2em;
+    border: 1px solid var(--border);
+    
 
     font-family: 'Quicksand', sans-serif;
     color: #707070;

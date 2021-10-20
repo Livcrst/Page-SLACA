@@ -64,7 +64,7 @@ aside{
 }
 
 /* Estilo menu lateral */
-aside >  #title-event{
+.title-event{
     background: var(--gradient-event);
     font-family: 'Roboto', sans-serif;
     color: var(--background-white);
@@ -75,6 +75,27 @@ aside >  #title-event{
     
     
 }
+.title-event > p , .title-event> #Login{
+
+    font-weight: 100;
+    font-size: 0.8em;
+
+    display: none;
+
+}
+
+.title-event > .menu-toggle{
+    display: none;
+    background-color: var(--gradient);
+
+}
+.menu-toggle > i{
+    width:20%;
+    color: var(--background-white);
+}
+#title-event-responsive {
+    display: none;
+}
 aside #image-event{
     width: 100%;
 }
@@ -83,7 +104,7 @@ aside #image-event{
     padding:1rem 0;
 }
 #languages, select{
-    background: var(--color-background-oranged);
+    background: var(--background-orange);
     color: var(--color-info-profile);
     font-weight: 400;
 
